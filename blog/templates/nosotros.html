@@ -1,11 +1,17 @@
-<! DOCTYPE html> 
-<html lang="en"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Mi blog</title> 
-</head> 
-<body> 
-  Sobre mi 
-</body> 
-</html>
+{% extends 'base.html' %}
+{% load static %}
+
+{%block titulo%}NOSOTROS{%endblock titulo%}
+
+{% block contenido %}
+    <H2>Sobre mi!</H2>
+    <li>Integrantes</li>
+    <li>Chavez Roberto</li>
+    <li>Leguizamon Rafael Marcelo</li>
+    <li>Llanes Silvia</li>
+    <li>Lucas Jorge</li>
+    <li>Portillo Valentina</li>
+    <li>Zalazar Bruno</li>
+
+
+{% endblock contenido %}

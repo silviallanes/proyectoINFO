@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Formulario de Contacto{% endblock %}
+ 
+{% block contenido %}
+    
+    <h1>Formulario de Contacto</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Enviar">
+    </form>
+
+{% endblock %}
